@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+p{
+    text-align: center;
+}
+
 #inputButton{
     margin-top: 2em;
     display: flex;

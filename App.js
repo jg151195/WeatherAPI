@@ -17,6 +17,7 @@ button.addEventListener('click', async()=>{
     const city = new City(inputCity);
     setInterval(await city.grabCity(inputCity), 5*60*1000);
     setInterval(await city.grabWeather(), 5*60*1000);
+    
 
     const headCity = document.querySelector('h1');
     headCity.textContent = city.name;
@@ -46,6 +47,7 @@ button.addEventListener('click', async()=>{
     
     const spanPressure = document.getElementById('pressure');
     spanPressure.textContent = `Air Pressure: ${city.pressure}mb`;
+    console.log(await city);
 })
    
     
