@@ -26,7 +26,7 @@ const city = new City(inputCity);
             container.style.backgroundImage = "url(/sunrise.jpg)";
             break;
         case "AFTERNOON":
-            img.src = "/afternoon.png";
+            img.src = "/sun.png";
             container.style.backgroundImage = "url(/afternoon.jpg)";
             break;
         case "NIGHT":
