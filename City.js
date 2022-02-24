@@ -20,7 +20,7 @@ export default class City {
             this.name = data[0].name;
             this.lat = data[0].lat;
             this.long = data[0].lon;
-            console.log(this.name, this.lat, this.long);
+            
         } catch (error) {
             alert("Erro");
         }
@@ -38,6 +38,6 @@ export default class City {
         this.temp = Math.round(data.main.temp - 273.15) + "°C";
         this.humidity = `${data.main.humidity}%`;
         this.pressure = `${data.main.pressure}`
-        console.log(data, this.temp, this.humidity);
+        
     }
 }

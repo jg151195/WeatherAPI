@@ -4,19 +4,19 @@
     font-family: sans-serif;
 }
 
-input{
+#inputButton{
     margin-top: 2em;
-    display: block;
+    display: flex;
     margin-right: auto;
     margin-left: auto;
     width: 10em;
-    text-align: center;
+    
 }
 
 h1{
     padding: 0.3em;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 0.5em;
 }
 h2{
