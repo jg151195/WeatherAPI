@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+input{
+    margin-top: 2em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 10em;
+    text-align: center;
+}
+
+h1{
+    padding: 0.3em;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+h2{
+    font-size: 2.5em;
+    margin: 0.5em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+h3{
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+img{
+    display: inline-block;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin-left: 9em;
+}
+
+#container{
+    color: white;
+    text-align: justify;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 21em;
+    height: 26em;
+    box-shadow: 10px 5px 5px black;
+    margin-top: 2em;
+    
+    border-radius: 1em;
+}
