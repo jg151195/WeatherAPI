@@ -12,7 +12,7 @@ export default class City {
 
     async grabCity(name) {
         try {
-            const apiCity = `http://api.openweathermap.org/geo/1.0/direct?q=${name}`;
+            const apiCity = `https://api.openweathermap.org/geo/1.0/direct?q=${name}`;
             const apiKey = '&appid=05b42a359cf920c47403016748ae9efb';
             const fullAPICity = apiCity + apiKey;
             const response = await fetch(fullAPICity);
@@ -30,7 +30,7 @@ export default class City {
 
     async grabWeather() {
 
-        const apiWeather = 'http://api.openweathermap.org/data/2.5/weather?';
+        const apiWeather = 'https://api.openweathermap.org/data/2.5/weather?';
         const coords = `lat=${this.lat}&lon=${this.long}`;
         const apiKey = '&appid=05b42a359cf920c47403016748ae9efb';;
         const fullAPIWeather = apiWeather + coords + apiKey;
