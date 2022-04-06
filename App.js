@@ -1,4 +1,4 @@
-import City from '/City.js';
+import City from './City.js';
 
 
 const container = document.getElementById('container');
@@ -26,16 +26,16 @@ button.addEventListener('click', async()=>{
     const img = document.querySelector('img');
     switch (dayStatus) {
         case "MORNING":
-            img.src = "/morning.png";
-            container.style.backgroundImage = "url(/sunrise.jpg)";
+            img.src = "./morning.png";
+            container.style.backgroundImage = "url(./sunrise.jpg)";
             break;
         case "AFTERNOON":
-            img.src = "/sun.png";
-            container.style.backgroundImage = "url(/afternoon.jpg)";
+            img.src = "./sun.png";
+            container.style.backgroundImage = "url(./afternoon.jpg)";
             break;
         case "NIGHT":
-            img.src = "/night.png";
-            container.style.backgroundImage = "url(/night2.webp)";
+            img.src = "./night.png";
+            container.style.backgroundImage = "url(./night2.webp)";
             break;
     }
     const spanTemp = document.querySelector('h2');
