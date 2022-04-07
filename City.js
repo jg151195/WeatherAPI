@@ -7,6 +7,7 @@ export default class City {
         this.temp;
         this.humidity;
         this.pressure;
+        this.date;
 
     }
 
@@ -17,9 +18,11 @@ export default class City {
             const fullAPICity = apiCity + apiKey;
             const response = await fetch(fullAPICity);
             const data = await response.json();
+            console.log(data);
             this.name = data[0].name;
             this.lat = data[0].lat;
             this.long = data[0].lon;
+            
             
             
         } catch (error) {
@@ -36,9 +39,13 @@ export default class City {
         const fullAPIWeather = apiWeather + coords + apiKey;
         const response = await fetch(fullAPIWeather);
         const data = await response.json();
-        this.temp = Math.round(data.main.temp - 273.15) + "°C";
+        console.log(data);
+        this.temp = Math.round(data.main.temp - 273.15);
         this.humidity = `${data.main.humidity}%`;
         this.pressure = `${data.main.pressure}`
+        this.date = new Date(Number(data.timezone));
+
+        console.log(data.timezone);
         
         
     }

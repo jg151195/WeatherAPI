@@ -1,49 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+
 }
 
-p{
+p {
     text-align: center;
 }
 
-#inputButton{
+button {
     margin-top: 2em;
     display: flex;
-    margin-right: auto;
+    margin-left: 2em;
+    border: none;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
     margin-left: auto;
-    width: 10em;
-    
+    margin-right: auto;
+
 }
 
-h1{
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
+}
+
+input {
+    width: 8%;
+    padding: 0.3em;
+    margin-top: 2em;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputButton {
+    margin-top: 2em;
+    display: inline;
+    width: 10em;
+
+}
+
+h1 {
     padding: 0.3em;
     text-align: center;
     font-size: 2em;
     margin-bottom: 0.5em;
 }
-h2{
+
+h2 {
     font-size: 2.5em;
     margin: 0.5em;
     margin-top: 1em;
     margin-left: 1em;
 }
 
-h3{
+h3 {
     margin-top: 1em;
     margin-left: 3em;
 }
 
-img{
-    display: inline-block;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    margin-left: 9em;
+img {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#container{
+#container {
     color: white;
     text-align: justify;
     display: block;
@@ -51,8 +85,8 @@ img{
     margin-left: auto;
     width: 21em;
     height: 26em;
-    box-shadow: 10px 5px 5px black;
     margin-top: 2em;
-    
-    border-radius: 1em;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
